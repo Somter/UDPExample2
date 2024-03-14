@@ -44,7 +44,7 @@ DWORD WINAPI Receiver(void* param)
 {
     while (true) {
         char response[DEFAULT_BUFLEN];
-        int result = recv(client_socket, response, DEFAULT_BUFLEN, 0);
+        int result = recv(client_socket, response, DEFAULT_BUFLEN, 0);  
         response[result] = '\0';
         int number; 
         string resulrName;       
